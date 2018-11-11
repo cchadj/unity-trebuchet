@@ -1753,6 +1753,7 @@ GameObject:
   - component: {fileID: 1074985899}
   - component: {fileID: 1074985900}
   - component: {fileID: 1074985901}
+  - component: {fileID: 1074985902}
   m_Layer: 0
   m_Name: Trebuchet
   m_TagString: Untagged
@@ -1828,6 +1829,18 @@ MonoBehaviour:
   rearLeftTransform: {fileID: 476241263}
   maxSteerAngle: 30
   motorForce: 3000
+--- !u!114 &1074985902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1074985897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ef46de5b193a244f9d3939fb8817ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restrainHingeJoint: {fileID: 2046554299}
 --- !u!1 &1127830768
 GameObject:
   m_ObjectHideFlags: 0
@@ -3073,7 +3086,7 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: Infinity
+  m_BreakForce: 850
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -3163,6 +3176,7 @@ GameObject:
   - component: {fileID: 2046554294}
   - component: {fileID: 2046554293}
   - component: {fileID: 2046554298}
+  - component: {fileID: 2046554299}
   - component: {fileID: 2046554297}
   m_Layer: 0
   m_Name: ThrowingBeam
@@ -3289,6 +3303,40 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!59 &2046554299
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2046554292}
+  m_ConnectedBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0.50000244, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 1.1497796, y: 28.97894, z: -8.441687}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 0
+  m_Limits:
+    min: 0
+    max: 0
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &2129166900
 GameObject:
   m_ObjectHideFlags: 0
