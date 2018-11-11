@@ -59,6 +59,7 @@ public class SimpleCarController : MonoBehaviour {
         wheelCollider.GetWorldPose(out pos, out quat);
         wheelTransform.transform.position = pos;
         wheelTransform.transform.rotation = quat;
+        wheelTransform.transform.Rotate(new Vector3(0f, 90f, 0f),Space.Self);
     }
 
     private void FixedUpdate()
