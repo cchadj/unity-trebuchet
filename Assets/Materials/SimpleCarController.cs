@@ -8,12 +8,10 @@ public class SimpleCarController : MonoBehaviour {
     public WheelCollider rearRightWheel, rearLeftWheel;
     public Transform frontRightTransform, frontLeftTransform;
     public Transform rearRightTransform, rearLeftTransform;
-    private Rigidbody rb;
     private float m_wheelRadius;
     private void Awake()
     {
         m_wheelRadius = frontRightWheel.radius;
-        rb = GetComponent<Rigidbody>();
     }   
 
     public void GetInput()

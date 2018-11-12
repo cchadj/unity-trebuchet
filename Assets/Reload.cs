@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(FixedJoint))]
-public class ReleaseOnEnter : MonoBehaviour {
-
-    public FixedJoint restrainHingeJoint;
+public class Reload : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -14,10 +11,9 @@ public class ReleaseOnEnter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetButton("Fire1"))
+		if(Input.GetKey(KeyCode.R))
         {
-
-            restrainHingeJoint.breakForce = 0;
+            
         }
 	}
 }

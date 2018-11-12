@@ -5,10 +5,11 @@ using UnityEngine;
 public class ControllMass : MonoBehaviour {
 
     public Rigidbody rb;
+    public float multiplier;
 
 	// Update is called once per frame
 	void Update ()
     {
-        rb.mass += Input.GetAxis("Vertical") * Time.deltaTime;
+        rb.mass += Input.GetAxis("VerticalUpDown") * multiplier * Time.deltaTime;
 	}
 }
