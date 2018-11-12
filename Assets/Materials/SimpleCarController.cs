@@ -30,12 +30,12 @@ public class SimpleCarController : MonoBehaviour {
         frontRightWheel.steerAngle = m_steerAngle;
         
     }
-    private void Update()
-    {
+    //private void Update()
+    //{
         
-        Debug.Log(rb.angularVelocity);
-        Debug.Log(rb.velocity.magnitude);
-    }
+    //    Debug.Log(rb.angularVelocity);
+    //    Debug.Log(rb.velocity.magnitude);
+    //}
 
     private void Accelerate()
     {

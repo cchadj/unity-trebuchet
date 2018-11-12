@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(HingeJoint))]
+[RequireComponent(typeof(FixedJoint))]
 public class ReleaseOnEnter : MonoBehaviour {
 
-    public HingeJoint restrainHingeJoint;
+    public FixedJoint restrainHingeJoint;
 
 	// Use this for initialization
 	void Start () {
