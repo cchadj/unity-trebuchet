@@ -16,6 +16,7 @@ public class ReleaseOnEnter : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.Space))
         {
+
             restrainHingeJoint.breakForce = 0;
         }
 	}

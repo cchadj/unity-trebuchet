@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class ControllMass : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
+    public Rigidbody rb;
+
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+        rb.mass += Input.GetAxis("Vertical") * Time.deltaTime;
 	}
 }
