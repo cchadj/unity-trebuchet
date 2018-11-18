@@ -6,18 +6,19 @@ using UnityEngine;
 public class ReleaseOnEnter : MonoBehaviour {
 
     public FixedJoint restrainHingeJoint;
-
+    public Rigidbody throwingArmWeight;
+    private float m_initialWeight;
 	// Use this for initialization
 	void Start () {
-		
-	}
+        m_initialWeight = throwingArmWeight.mass;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetButton("Fire1"))
         {
-
-            restrainHingeJoint.breakForce = 0;
+            throwingArmWeight.mass = 1f;
         }
 	}
 }

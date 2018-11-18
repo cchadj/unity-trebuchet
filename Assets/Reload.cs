@@ -7,19 +7,17 @@ public class Reload : MonoBehaviour {
     public Rigidbody rb;
     public GameObject boulderPrefab;
     public Transform sling;
-
-    public HingeJoint hj;
-	// Use this for initialization
-	void Start () {
-
-    }
-	
+    public maxCamera maxCamera;
+    public Rigidbody connectedBody;
+    public GameObject trebuchetPrefab;
+    private int clickCounter = 0;
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetButton("Fire2"))
+		if(Input.GetButtonDown("Fire2"))
         {
-            rb.mass = 15000;
-            GameObject.Instantiate(boulderPrefab, sling, false);
+            if(clickCounter % 2 == 0)
+                rb.mass = 15000;
+            clickCounter++;
         }
 	}
 }
