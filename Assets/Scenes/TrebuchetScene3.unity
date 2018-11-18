@@ -150,6 +150,52 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &62363953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62363949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &62363954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62363949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 62363953}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &112729809
 Prefab:
   m_ObjectHideFlags: 0
@@ -245,6 +291,52 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.30000004, y: 0.30000004, z: 0.29999998}
   m_Center: {x: 0, y: -0.0000000018626451, z: 0}
+--- !u!114 &112729814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112729811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &112729815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112729811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 112729814}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &116149982
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,7 +397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &120377104
 GameObject:
@@ -392,7 +484,7 @@ Transform:
   m_LocalScale: {x: 3229.1257, y: 2012.6686, z: 3134.3284}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
@@ -473,6 +565,8 @@ GameObject:
   - component: {fileID: 250934736}
   - component: {fileID: 250934735}
   - component: {fileID: 250934734}
+  - component: {fileID: 250934738}
+  - component: {fileID: 250934739}
   m_Layer: 0
   m_Name: Wooden_barrel_02 (5)
   m_TagString: Untagged
@@ -565,6 +659,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 250934732}
   m_Mesh: {fileID: 4300004, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &250934738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 250934732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &250934739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 250934732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 250934738}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &255050604
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +718,8 @@ GameObject:
   - component: {fileID: 255050608}
   - component: {fileID: 255050607}
   - component: {fileID: 255050606}
+  - component: {fileID: 255050610}
+  - component: {fileID: 255050611}
   m_Layer: 0
   m_Name: Wooden_kadkam (3)
   m_TagString: Untagged
@@ -670,6 +812,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 255050604}
   m_Mesh: {fileID: 4300008, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &255050610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 255050604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &255050611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 255050604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 255050610}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &307978305
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,6 +871,8 @@ GameObject:
   - component: {fileID: 307978309}
   - component: {fileID: 307978308}
   - component: {fileID: 307978307}
+  - component: {fileID: 307978311}
+  - component: {fileID: 307978312}
   m_Layer: 0
   m_Name: Wooden_barrel_02 (2)
   m_TagString: Untagged
@@ -775,6 +965,57 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 307978305}
   m_Mesh: {fileID: 4300004, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &307978311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 307978305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &307978312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 307978305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 307978311}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!4 &336356480 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4509374183551842, guid: 7437ea7af18e6bc489fc38080b65ac82,
+    type: 2}
+  m_PrefabInternal: {fileID: 1729475138}
 --- !u!1 &420606530
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +1044,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &420606532
 MonoBehaviour:
@@ -933,6 +1174,52 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &424193778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 424193775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &424193779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 424193775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 424193778}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,7 +1312,7 @@ MonoBehaviour:
   target: {fileID: 1074985898}
   targetOffset: {x: 0, y: 0, z: 0}
   distance: 40
-  maxDistance: 80
+  maxDistance: 150
   minDistance: 0.6
   xSpeed: 200
   ySpeed: 200
@@ -1047,6 +1334,8 @@ GameObject:
   - component: {fileID: 546050211}
   - component: {fileID: 546050214}
   - component: {fileID: 546050215}
+  - component: {fileID: 546050216}
+  - component: {fileID: 546050217}
   m_Layer: 0
   m_Name: Wooden_barrel_02
   m_TagString: Untagged
@@ -1139,6 +1428,52 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.822384, y: 0.82238364, z: 0.9441503}
   m_Center: {x: 0, y: 0.0000019073486, z: 0.47207516}
+--- !u!114 &546050216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546050210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &546050217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546050210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 546050216}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &630980928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,6 +1562,8 @@ GameObject:
   - component: {fileID: 650123505}
   - component: {fileID: 650123504}
   - component: {fileID: 650123503}
+  - component: {fileID: 650123507}
+  - component: {fileID: 650123508}
   m_Layer: 0
   m_Name: Wooden_barrel_02 (4)
   m_TagString: Untagged
@@ -1319,6 +1656,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 650123501}
   m_Mesh: {fileID: 4300004, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &650123507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 650123501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &650123508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 650123501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 650123507}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &818812622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,6 +1715,8 @@ GameObject:
   - component: {fileID: 818812626}
   - component: {fileID: 818812625}
   - component: {fileID: 818812624}
+  - component: {fileID: 818812628}
+  - component: {fileID: 818812629}
   m_Layer: 0
   m_Name: Wooden_barrel_02 (3)
   m_TagString: Untagged
@@ -1424,6 +1809,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 818812622}
   m_Mesh: {fileID: 4300004, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &818812628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 818812622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &818812629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 818812622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 818812628}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &894053913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1437,6 +1868,8 @@ GameObject:
   - component: {fileID: 894053914}
   - component: {fileID: 894053917}
   - component: {fileID: 894053918}
+  - component: {fileID: 894053919}
+  - component: {fileID: 894053920}
   m_Layer: 0
   m_Name: Wooden_barrel_03
   m_TagString: Untagged
@@ -1529,6 +1962,52 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8223839, y: 0.82238376, z: 0.9441503}
   m_Center: {x: 0, y: 0, z: 0.47207516}
+--- !u!114 &894053919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894053913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &894053920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894053913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 894053919}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &911260627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,6 +2021,8 @@ GameObject:
   - component: {fileID: 911260631}
   - component: {fileID: 911260630}
   - component: {fileID: 911260629}
+  - component: {fileID: 911260633}
+  - component: {fileID: 911260634}
   m_Layer: 0
   m_Name: Wooden_kadkam (1)
   m_TagString: Untagged
@@ -1634,6 +2115,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 911260627}
   m_Mesh: {fileID: 4300008, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &911260633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 911260627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &911260634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 911260627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 911260633}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &931140774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,6 +2174,8 @@ GameObject:
   - component: {fileID: 931140778}
   - component: {fileID: 931140777}
   - component: {fileID: 931140776}
+  - component: {fileID: 931140780}
+  - component: {fileID: 931140781}
   m_Layer: 0
   m_Name: Wooden_kadkam (4)
   m_TagString: Untagged
@@ -1739,6 +2268,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931140774}
   m_Mesh: {fileID: 4300008, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &931140780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931140774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &931140781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 931140774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 931140780}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &950125320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,6 +2327,8 @@ GameObject:
   - component: {fileID: 950125324}
   - component: {fileID: 950125323}
   - component: {fileID: 950125322}
+  - component: {fileID: 950125326}
+  - component: {fileID: 950125327}
   m_Layer: 0
   m_Name: Wooden_barrel_03 (3)
   m_TagString: Untagged
@@ -1844,6 +2421,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 950125320}
   m_Mesh: {fileID: 4300006, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &950125326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 950125320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &950125327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 950125320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 950125326}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &970093504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,7 +2517,7 @@ Transform:
   - {fileID: 1406469326}
   - {fileID: 1675679279}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1011953784
 GameObject:
@@ -1909,6 +2532,8 @@ GameObject:
   - component: {fileID: 1011953788}
   - component: {fileID: 1011953787}
   - component: {fileID: 1011953786}
+  - component: {fileID: 1011953790}
+  - component: {fileID: 1011953791}
   m_Layer: 0
   m_Name: Wooden_kadkam (2)
   m_TagString: Untagged
@@ -2001,6 +2626,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1011953784}
   m_Mesh: {fileID: 4300008, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &1011953790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1011953784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &1011953791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1011953784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1011953790}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1065032257
 GameObject:
   m_ObjectHideFlags: 0
@@ -2014,6 +2685,8 @@ GameObject:
   - component: {fileID: 1065032261}
   - component: {fileID: 1065032260}
   - component: {fileID: 1065032259}
+  - component: {fileID: 1065032263}
+  - component: {fileID: 1065032264}
   m_Layer: 0
   m_Name: Wooden_barrel_03 (1)
   m_TagString: Untagged
@@ -2106,6 +2779,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1065032257}
   m_Mesh: {fileID: 4300006, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &1065032263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1065032257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &1065032264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1065032257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065032257}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1074985897 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1969408759225938, guid: 7437ea7af18e6bc489fc38080b65ac82,
@@ -2191,6 +2910,8 @@ GameObject:
   - component: {fileID: 1275633147}
   - component: {fileID: 1275633146}
   - component: {fileID: 1275633145}
+  - component: {fileID: 1275633149}
+  - component: {fileID: 1275633150}
   m_Layer: 0
   m_Name: Wooden_barrel_03 (4)
   m_TagString: Untagged
@@ -2283,6 +3004,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1275633143}
   m_Mesh: {fileID: 4300006, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &1275633149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1275633143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &1275633150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1275633143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1275633149}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1321790813
 GameObject:
   m_ObjectHideFlags: 0
@@ -2296,6 +3063,8 @@ GameObject:
   - component: {fileID: 1321790817}
   - component: {fileID: 1321790816}
   - component: {fileID: 1321790815}
+  - component: {fileID: 1321790819}
+  - component: {fileID: 1321790820}
   m_Layer: 0
   m_Name: Wooden_barrel_03 (2)
   m_TagString: Untagged
@@ -2388,6 +3157,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1321790813}
   m_Mesh: {fileID: 4300006, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &1321790819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1321790813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &1321790820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1321790813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1321790819}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1377244837
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,6 +3216,8 @@ GameObject:
   - component: {fileID: 1377244841}
   - component: {fileID: 1377244840}
   - component: {fileID: 1377244839}
+  - component: {fileID: 1377244843}
+  - component: {fileID: 1377244844}
   m_Layer: 0
   m_Name: Wooden_barrel_03 (5)
   m_TagString: Untagged
@@ -2493,6 +3310,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1377244837}
   m_Mesh: {fileID: 4300006, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &1377244843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1377244837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &1377244844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1377244837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1377244843}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1406469325
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,6 +3369,8 @@ GameObject:
   - component: {fileID: 1406469329}
   - component: {fileID: 1406469328}
   - component: {fileID: 1406469327}
+  - component: {fileID: 1406469331}
+  - component: {fileID: 1406469332}
   m_Layer: 0
   m_Name: Wooden_kadkam (5)
   m_TagString: Untagged
@@ -2598,6 +3463,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1406469325}
   m_Mesh: {fileID: 4300008, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &1406469331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1406469325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &1406469332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1406469325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1406469331}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1536114051
 GameObject:
   m_ObjectHideFlags: 0
@@ -2611,6 +3522,8 @@ GameObject:
   - component: {fileID: 1536114052}
   - component: {fileID: 1536114055}
   - component: {fileID: 1536114056}
+  - component: {fileID: 1536114057}
+  - component: {fileID: 1536114058}
   m_Layer: 0
   m_Name: Wooden_kadkam
   m_TagString: Untagged
@@ -2703,6 +3616,52 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.42937797, y: 0.4293781, z: 0.40858406}
   m_Center: {x: 0.000000007450581, y: 0.0000019222498, z: 0}
+--- !u!114 &1536114057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1536114051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &1536114058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1536114051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1536114057}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1538964753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2789,8 +3748,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 630980929}
+  - {fileID: 1970026637}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2896,6 +3856,52 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1675679283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1675679280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &1675679284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1675679280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1675679283}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1696017182
 Prefab:
   m_ObjectHideFlags: 0
@@ -2965,6 +3971,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114454253096251500, guid: 7437ea7af18e6bc489fc38080b65ac82,
+        type: 2}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4711817014772866, guid: 7437ea7af18e6bc489fc38080b65ac82, type: 2}
       propertyPath: m_LocalPosition.x
       value: 42
@@ -2995,13 +4006,54 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4711817014772866, guid: 7437ea7af18e6bc489fc38080b65ac82, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114485177104204634, guid: 7437ea7af18e6bc489fc38080b65ac82,
         type: 2}
       propertyPath: maxCamera
       value: 
       objectReference: {fileID: 534669906}
+    - target: {fileID: 114454253096251500, guid: 7437ea7af18e6bc489fc38080b65ac82,
+        type: 2}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 336356480}
+    - target: {fileID: 114454253096251500, guid: 7437ea7af18e6bc489fc38080b65ac82,
+        type: 2}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_parent
+      objectReference: {fileID: 0}
+    - target: {fileID: 114454253096251500, guid: 7437ea7af18e6bc489fc38080b65ac82,
+        type: 2}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114454253096251500, guid: 7437ea7af18e6bc489fc38080b65ac82,
+        type: 2}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Transform, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114454253096251500, guid: 7437ea7af18e6bc489fc38080b65ac82,
+        type: 2}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114454253096251500, guid: 7437ea7af18e6bc489fc38080b65ac82,
+        type: 2}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114454253096251500, guid: 7437ea7af18e6bc489fc38080b65ac82,
+        type: 2}
+      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1811990064}
+    - target: {fileID: 114045211714397590, guid: 7437ea7af18e6bc489fc38080b65ac82,
+        type: 2}
+      propertyPath: OnShootEventToRaise
+      value: 
+      objectReference: {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7437ea7af18e6bc489fc38080b65ac82, type: 2}
   m_IsPrefabAsset: 0
@@ -3104,6 +4156,80 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1776092126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1776092123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &1776092127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1776092123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1776092126}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!1 &1811990063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1811990064}
+  m_Layer: 0
+  m_Name: ThrownBoulders
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1811990064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1811990063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1905004065 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 6c809f6aeff0a094fb31d53a03f8d550,
@@ -3141,6 +4267,170 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1905004069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905004065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &1905004070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905004065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1905004069}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!1 &1970026636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1970026637}
+  - component: {fileID: 1970026639}
+  - component: {fileID: 1970026638}
+  - component: {fileID: 1970026641}
+  - component: {fileID: 1970026640}
+  m_Layer: 5
+  m_Name: DirectHitsText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1970026637
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970026636}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1538964757}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 80, y: -140}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1970026638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970026636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Direct Hits:'
+--- !u!222 &1970026639
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970026636}
+  m_CullTransparentMesh: 0
+--- !u!114 &1970026640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970026636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ac2ef59d01166459addb751fd7fcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitCount: 0
+--- !u!114 &1970026641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970026636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1970026640}
+        m_MethodName: IncrementHitCount
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1995127943
 GameObject:
   m_ObjectHideFlags: 0
@@ -3154,6 +4444,8 @@ GameObject:
   - component: {fileID: 1995127947}
   - component: {fileID: 1995127946}
   - component: {fileID: 1995127945}
+  - component: {fileID: 1995127949}
+  - component: {fileID: 1995127950}
   m_Layer: 0
   m_Name: Wooden_barrel_02 (1)
   m_TagString: Untagged
@@ -3246,3 +4538,49 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1995127943}
   m_Mesh: {fileID: 4300004, guid: 1358883a95a8d0143b380652d08d146a, type: 3}
+--- !u!114 &1995127949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1995127943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8541ce6d412ff85409a6c2e7593db1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTriggerOnHit: {fileID: 11400000, guid: 7c58f3c85b360904285bbfba1421f228,
+    type: 2}
+  evetnToTriggerOnDirectBoulderHit: {fileID: 11400000, guid: 8ec80ab6e3753524aa6b9171fcea6184,
+    type: 2}
+  boulder: {fileID: 135429360833279654, guid: b4577ad6c3f32244a876b3d311850b2e, type: 2}
+  userFired: 0
+--- !u!114 &1995127950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1995127943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1092130167e2e804c8e677c7eb1b83f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvents:
+  - {fileID: 11400000, guid: 1cfff6607a0a73841912f0fd44e163a9, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1995127949}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
